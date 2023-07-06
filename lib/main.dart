@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black,
         appBar: AppBar(
           title: const Text(
             "Demon Slayer ID",
@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
                   letterSpacing: 2.0,
                 ),
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(height: 5,),
               Text(
                 "Tanjiro Kamado",
                 style: TextStyle(
@@ -61,7 +61,7 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 15),
               const Text(
                 "CURRENT RANK",
                 style: TextStyle(
@@ -69,7 +69,7 @@ class Home extends StatelessWidget {
                   letterSpacing: 2.0,
                 ),
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(height: 5,),
               Text(
                 "Kanoe",
                 style: TextStyle(
@@ -79,7 +79,27 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 10),
+              const Text(
+                "INFO",
+                style: TextStyle(
+                  color: Colors.grey,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              const SizedBox(height: 5,),
+              Text(
+                """ Tanjiro Kamado (竈門かまど 炭たん治じ郎ろう Kamado Tanjirō) is the main protagonist of Demon Slayer: Kimetsu no Yaiba.
+ He is a Demon Slayer in the Demon Slayer Corps, who joined to find a remedy to turn his sister, Nezuko Kamado, back into a human and to hunt down and kill demons, and later swore to defeat Muzan Kibutsuji, the King of Demons, in order to prevent others from suffering the same fate as him.
+ Before he became a Demon Slayer,Tanjiro was a coal burner before his entire family was slaughtered by Muzan while his younger sister, Nezuko, was turned into a demon.""",
+                style: TextStyle(
+                  color: Colors.amberAccent[200],
+                  letterSpacing: 2.0,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 5,),
               Row(
                 children: <Widget>[
                   IconButton(
