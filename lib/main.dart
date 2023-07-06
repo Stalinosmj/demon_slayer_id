@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -81,9 +82,17 @@ class Home extends StatelessWidget {
               const SizedBox(height: 30),
               Row(
                 children: <Widget>[
-                  Icon(
-                    Icons.source,
+                  IconButton(
                     color: Colors.grey[400],
+                    icon: const Icon(Icons.source),
+                    onPressed: () async {
+                      const url = 'https://kimetsu-no-yaiba.fandom.com/';
+                      if (await canLaunchUrlString(url)) {
+                        await launchUrlString(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
                   ),
                   const SizedBox(width: 10,),
                   Text(
