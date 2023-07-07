@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MaterialApp(
+    debugShowCheckedModeBanner : false,
     home: Home(),
   ));
 }
